@@ -1,0 +1,31 @@
+.text-section{
+    grid-column: 3/7;
+}
+.text-section-txt{
+    text-align: center;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-gap: .75rem;
+}
+.text-section-txt p{
+    opacity: .3;
+}
+@media screen and (max-width: 360px) {
+    .text-section-txt p{
+        font-size: .5rem !important;
+    }
+    .text-section-txt h2{
+        font-size: .75rem !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .text-section{
+        grid-column: 2/8;
+    }
+    .text-section-txt p{
+        font-size: 12px;
+    }
+    .text-section-txt h2{
+        font-size: 14px;
+    }
+}

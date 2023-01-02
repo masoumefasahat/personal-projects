@@ -1,0 +1,41 @@
+.two-banners{
+    grid-column: 2/8;
+}
+.two-banners-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.two-banners-first, .two-banners-second{
+    position: relative;
+}
+.two-banners-text{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-items: start;
+    grid-row-gap: 10px;
+    position: absolute;
+    color: white;
+    top: 10%;
+    right: 5%;
+}
+.two-banners-text p{
+    font-size: .75rem;
+}
+@media screen and (max-width: 576px) {
+    .two-banners-text h4{
+        font-size: 12px;
+    }
+    .two-banners-text p, .two-banners-text a{
+        font-size: 10px;
+    }
+    .two-banners-div{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .two-banners-div{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+    }
+}

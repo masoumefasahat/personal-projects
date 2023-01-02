@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Vazir';
+}
+a{
+	text-decoration: none;
+	color: #23232C;
+}
+button{
+	font-family: 'Vazir';
+}
+li{
+	list-style: none;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
+	grid-template-rows: max-content;
+	grid-row-gap: 3rem;
+}
+.horizental-line{
+	grid-column: 2/8;
+	width: 100%;
+	background-color: #23232C;
+	opacity: .1;
+	height: 2px;
+}
+.more-option-link{
+    font-size: .75rem;
+    border-bottom: 2px solid white;
+	padding-bottom: 5px;
+    color: white;
+}
+@media screen and (max-width: 360px) {
+    .grid-container{
+		grid-row-gap: 2rem;
+	}
+}

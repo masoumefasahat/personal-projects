@@ -1,0 +1,298 @@
+.footer{
+    grid-column: 2/8;
+}
+.footer-div{
+    display: grid;
+    grid-row-gap: 3rem;
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem 1.25rem;
+}
+.footer-nav-right{
+    display: grid;
+    grid-template-rows: max-content;
+    grid-gap: .75rem 0;
+}
+.footer-nav-right p{
+    font-size: .75rem;
+    opacity: .5;
+}
+.social-icons{
+    display: grid;
+    grid-template-columns: 1fr repeat(5,1fr) 1fr;
+}
+.first-icon{
+    grid-column: 2;
+}
+.footer-nav-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) .75fr;
+}
+.footer-nav-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 10px;
+}
+.footer-nav-left-list a{
+    opacity: .5;
+    font-size: .5rem;
+}
+.footer-nav-list.show{
+    display: grid;
+}
+@media screen and (max-width: 992px) {
+    .footer-nav{
+        grid-template-rows: max-content;
+        grid-template-columns: 1fr;
+    }
+    .footer-nav-right{
+        grid-template-columns: .5fr 3fr 1fr;
+        align-items: center;
+    }
+    .footer-nav-right .samcoh-logo-text{
+        display: none;
+    }
+    .footer-nav-right p{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-nav-right{
+        grid-template-columns: 1fr 1fr;
+    }
+    .social-icons{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr;
+        justify-items: end;
+    }
+    .footer-nav-right p{
+        display: none;
+    }
+    .first-icon{
+        grid-column: 1;
+    }
+    .footer{
+        grid-column: 1/-1;
+    }
+    .footer-div{
+        padding: 0 1rem;
+        grid-row-gap: 1rem;
+    }
+    .footer-nav-right .samacoh-logo-img{
+        height: 40px;
+        width: 40px;
+    }
+    .copy-right-text p{
+        font-size: .4rem;
+    }
+    .footer-nav-left{
+        grid-template-rows: max-content;
+        grid-template-columns: 1fr;
+    }
+    .footer-nav-list{
+        display: none;
+        top: 100%;
+        background-color: white;
+        z-index: 1;
+        width: 100%;
+        padding-top: 0;
+    }
+    .footer-nav-left-item{
+        position: relative;
+        border-bottom: 2px solid #F1F2F4;
+    }
+    .footer-nav-left label{
+        font-size: .75rem;
+    }
+    .copy-right{
+        border-top: none!important;
+    }
+}
+.copy-right{
+    border-top: 2px solid #F1F2F4;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    align-items: center;
+}
+.copy-right-logo{
+    justify-items: end;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+}
+.copy-right-text{
+    font-size: .75rem;
+}
+.copy-right-afarineshweb-logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 21px;
+}
+.copy-right-afarineshweb-txt{
+    width: 66px;
+    height: 15px;
+    margin: 3.5px 0 3.5px 10px;
+    position: relative;
+}
+.copy-right-afarineshweb-txt div{
+    background-color: #CCCCCC;
+    position: absolute;
+}
+.copy-right-afarineshweb-logo div{
+    width: 3px;
+    height: 21px;
+}
+.straight-triangle{
+    background: #FF1E4B 0% 0% no-repeat padding-box;
+}
+.crooked-triangle{
+    background: #FF6180 0% 0% no-repeat padding-box;
+    transform: rotate(-22deg);
+    z-index: -1;
+}
+.copy-right-afarineshweb-txt div:nth-child(1){
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(2){
+    right: 3px;
+    top: 4px;
+    width: 2px;
+    height: 8px;
+}
+.copy-right-afarineshweb-txt div:nth-child(3){
+    right: 8px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    border-radius: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(4){
+    right: 10px;
+    top: 10px;
+    width: 8px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(5){
+    right: 10px;
+    top: 2px;
+    width: 2px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(6){
+    right: 16px;
+    top: 8px;
+    width: 2px;
+    height: 8px;
+}
+.copy-right-afarineshweb-txt div:nth-child(7){
+    right: 16px;
+    top: 14px;
+    width: 4px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(8){
+    right: 22px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(9){
+    right: 23px;
+    top: 14px;
+    width: 4px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(10){
+    right: 26px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(11){
+    right: 30px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(12){
+    right: 28px;
+    top: 2px;
+    width: 2px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(13){
+    right: 30px;
+    top: 8px;
+    width: 10px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(14){
+    right: 40px;
+    top: 8px;
+    width: 2px;
+    height: 8px;
+}
+.copy-right-afarineshweb-txt div:nth-child(15){
+    right: 42px;
+    top: 14px;
+    width: 4px;
+    height: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(16){
+    right: 34px;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(17){
+    right: 48px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    border-radius: 2px;
+}
+.copy-right-afarineshweb-txt div:nth-child(18){
+    right: 48px;
+    top: 8px;
+    width: 2px;
+    height: 8px;
+}
+.copy-right-afarineshweb-txt div:nth-child(19){
+    right: 56px;
+    top: 8px;
+    width: 10px;
+    height: 4px;
+    background-color: white;
+    border-bottom: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+}
+.copy-right-afarineshweb-txt div:nth-child(20){
+    right: 60px;
+    top: 14px;
+    width: 2px;
+    height: 2px;
+}

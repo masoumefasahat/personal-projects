@@ -1,0 +1,30 @@
+.logoes-section{
+    grid-column: -1/1;
+}
+.logoes-section-div{
+    background-color: #F1F2F4;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: max-content;
+    justify-items: center;
+    align-items: center;
+}
+.logoes-section-div .first-img{
+    grid-column: 2;
+}
+.logoes-section-item img{
+    width: 100%;
+}
+@media screen and (max-width:360px) {
+    .logoes-section-div{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .logoes-section-div .first-img{
+        grid-column: 1;
+    }
+    .logoes-section-item img{
+        width: 50px;
+        height: 50px;
+    }
+}
