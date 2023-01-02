@@ -1,0 +1,58 @@
+.reserve{
+    grid-column: 1/-1;
+}
+.reserve-section{
+    display: grid;
+    background-image: url(../img/slider.jpg), linear-gradient(to bottom, rgb(66, 61, 61), #000000);
+    grid-template-columns: 50px repeat(4,1fr) 50px;
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+}
+.right{
+    background-color: rgba(255, 255, 255, 0.752);
+    grid-column: 3/6;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 2fr;
+    padding: 10px;
+}
+.left{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.878);
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 2fr 1fr repeat(3, .5fr) 2fr;
+    padding: 20px 10px 10px 10px;
+}
+.order-text{
+    align-self: center;
+}
+.reserve-image{
+    height: 100px;
+    margin: 0 auto;
+    clip-path: circle(45% at 50% 50%);
+}
+.reserve-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.right-title, .reserve-branch, .parantes{
+    color: orange;
+}
+@media screen and (max-width:700px){
+    .reserve-section{
+        grid-template-columns: 15px repeat(4,1fr) 15px;
+        padding: 10px 0;
+    }
+    .right{
+        font-size: 12px;
+    }
+    .left{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 450px){
+    .reserve-image{
+        height: 80px;
+    }
+}

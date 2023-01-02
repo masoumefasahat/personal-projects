@@ -1,0 +1,37 @@
+.header{
+    background-color: #000000;
+    grid-column: 1/-1;
+    background-image: url(../img/header.jpg), linear-gradient(to bottom, rgb(66, 61, 61), #000000);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    grid-row-gap: 20px;
+    background-position: center;
+}
+.header1{
+    font-size: 25px;
+    color: white;
+}
+.header2{
+    font-size: 30px;
+    color: white;
+}
+.header-text{
+    color: orange;
+}
+.header-btn{
+    font-size: 16px;
+    background-color: orange;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.header-btn:hover{
+    color: orange;
+    background-color: white;
+}

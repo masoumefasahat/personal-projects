@@ -1,0 +1,25 @@
+.story{
+    grid-column: 1/-1;
+}
+.story-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(170px, 1fr));
+    grid-gap: 15px 10px;
+    padding: 20px;
+}
+.story-image{
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:749px){
+    .image4{
+        grid-column: 2/3;
+    }
+}
+@media screen and (max-width:389px){
+    .image4{
+        grid-column: auto;
+    }
+}
